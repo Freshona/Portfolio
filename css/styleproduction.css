@@ -159,24 +159,19 @@ button:focus,
     display: inline-block;
     margin-left: 15px;
 }
-*/
+
 .navigation-list__item--active {
     text-decoration: none;
 }
 
-
-%profile-style {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .profile {
-@extend %profile-style;
-
+max-width: 700px;
+margin: 0 auto;
 }
 
 .aboutme-profile {
-  @extend %profile-style;
+  max-width: 700px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -354,3 +349,5 @@ button:focus,
 .table-style {
     padding-top: 10px;
 }
+
+
