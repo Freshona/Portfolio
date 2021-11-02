@@ -13,6 +13,7 @@ let pokemonList = [
 
 ];
 
+// FOR loop for pokemon with text message about the largest pokemon
 for (let i = 0; i < pokemonList.length; i++) {
        if (pokemonList[i].height === 1){
                document.write('<p>' + pokemonList[i].name + " is one huge pokemon!" + '</p>');
@@ -21,3 +22,4 @@ for (let i = 0; i < pokemonList.length; i++) {
         document.write('<p>' + pokemonList[i].height + '</p>');
        }
 }
+// END for loop
