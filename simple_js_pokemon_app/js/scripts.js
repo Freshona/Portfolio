@@ -7,19 +7,15 @@ let myFavouriteFood="Falafel";
 document.write(myFavouriteFood);*/
 
 let pokemonList = [
-        {name : 'bulbasaur', height : 0.7, types : ['grass ', 'poison']},
-        {name : 'squirtl', height: 0.5, types : "water"},
+        {name : 'bulbasaur', height : 0.7, type : ['grass', 'poison']},
+        {name : 'squirtl', height: 0.5, type : "water"},
         {name : 'wartortle', height: 1.0, type : "water" },
 
-];
+]
 
-// FOR loop for pokemon with text message about the largest pokemon
-for (let i = 0; i < pokemonList.length; i++) {
-       if (pokemonList[i].height === 1){
-               document.write('<p>' + pokemonList[i].name + " is one huge pokemon!" + '</p>');
-       } else {
-        document.write('<p>' + pokemonList[i].name + '</p>');
-        document.write('<p>' + pokemonList[i].height + '</p>');
-       }
-}
-// END for loop
+// forEach function loop to print details of each one
+pokemonList.forEach(function(pokemon) {
+        document.write(pokemon.name+ " " + pokemon.height + " " + pokemon.type + '</p>');
+});
+        
+// END forEach
